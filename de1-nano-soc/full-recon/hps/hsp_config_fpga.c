@@ -789,10 +789,10 @@ ALT_STATUS_CODE test_config_full(char *filename, void *virtual_base)
      //open the file  read  file name---soc_system_dc.rbf
     if((fp = fopen(filename,"rb"))==NULL)
     {
-	printf("soc_system_dc.rbf open %s failed\n");
+	printf("soc_system_dc.rbf open %s failed\n", filename);
 	return false;
     }
-    printf("%s file file open success \n",filename);
+    printf("%s file file open success \n", filename);
     //get file size  fpga_image_size
     fseek(fp,0,SEEK_END);
     fpga_image_size=ftell(fp);
