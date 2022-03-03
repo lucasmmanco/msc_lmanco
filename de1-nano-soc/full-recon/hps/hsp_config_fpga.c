@@ -2,13 +2,18 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/mman.h>
-#include "alt_fpga_manager_terasic.h"
+#include <stdlib.h>
 #include <stdbool.h>
 #include <fcntl.h>
+#include <string.h>
+
+#include "alt_fpga_manager_terasic.h"
 #include "soc_cv_av/socal/socal.h"
 #include "soc_cv_av/socal/hps.h"
 #include "soc_cv_av/socal/alt_fpgamgr.h"
 #include "soc_cv_av/socal/alt_gpio.h"
+
+
 
 #define dprintf(...)
 // #define dprintf(fmt, ...) printf(fmt, ##__VA_ARGS__)
