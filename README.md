@@ -1,2 +1,5 @@
-# msc_lmanco
-On this project you will find the source code of my masters degree work
+# TalesDias
+This is the modification of lucasmmanco [masters degree work](https://github.com/lucasmmanco/msc_lmanco)
+The purpose is to add partial reconfiguration support to the reconfiguration program
+
+

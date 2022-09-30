@@ -2,18 +2,15 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/mman.h>
-#include <stdlib.h>
+#include "alt_fpga_manager_terasic.h"
 #include <stdbool.h>
 #include <fcntl.h>
-#include <string.h>
-
-#include "alt_fpga_manager_terasic.h"
 #include "soc_cv_av/socal/socal.h"
 #include "soc_cv_av/socal/hps.h"
 #include "soc_cv_av/socal/alt_fpgamgr.h"
 #include "soc_cv_av/socal/alt_gpio.h"
-
-
+#include <stdlib.h>
+#include <string.h>
 
 #define dprintf(...)
 // #define dprintf(fmt, ...) printf(fmt, ##__VA_ARGS__)
@@ -792,7 +789,7 @@ ALT_STATUS_CODE test_config_full(char *filename, void *virtual_base)
 	printf("soc_system_dc.rbf open %s failed\n", filename);
 	return false;
     }
-    printf("%s file file open success \n", filename);
+    printf("%s file file open success \n",filename);
     //get file size  fpga_image_size
     fseek(fp,0,SEEK_END);
     fpga_image_size=ftell(fp);

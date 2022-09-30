@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Wed Nov  3 16:43:49 2021
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : PWM_rev
+Top-level Entity Name : PR
+Family : Cyclone V
+Logic utilization (in ALMs) : 43 / 41,910 ( < 1 % )
+Total registers : 65
+Total pins : 19 / 499 ( 4 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 5,662,720 ( 0 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

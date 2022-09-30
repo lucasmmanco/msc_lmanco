@@ -22,7 +22,7 @@ $(TARGET): $(OBJ)
 $(OBJ): %.o: %.c Makefile soc_system_dc.rbf
 	$(CC) $(CFLAGS) -c $< -o $@
 # With Data Compression
-soc_system_dc.rbf:	../fpga/output_files/full_recon.sof
+soc_system_dc.rbf:	../fpga/output_files/PWM_rev.sof
 	$(RM) cpf_option.txt
 	echo bitstream_compression=on > cpf_option.txt
 	quartus_cpf -c -o cpf_option.txt $< $@

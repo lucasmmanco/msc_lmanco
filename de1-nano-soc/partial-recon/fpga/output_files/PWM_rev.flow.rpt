@@ -1,0 +1,171 @@
+Flow report for PWM_rev
+Wed Nov  3 16:44:30 2021
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Nov  3 16:44:30 2021           ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Revision Name                   ; PWM_rev                                         ;
+; Top-level Entity Name           ; PR                                              ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSXFC6D6F31C6                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 47 / 41,910 ( < 1 % )                           ;
+; Total registers                 ; 68                                              ;
+; Total pins                      ; 19 / 499 ( 4 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/02/2021 16:20:51 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; PWM_rev             ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                      ;
++----------------------------------------+---------------------------------------+---------------+-------------+----------------------------------------+
+; Assignment Name                        ; Value                                 ; Default Value ; Entity Name ; Section Id                             ;
++----------------------------------------+---------------------------------------+---------------+-------------+----------------------------------------+
+; ALLOW_MULTIPLE_PERSONAS                ; On                                    ; --            ; PR          ; counter:counter_inst                   ;
+; ALLOW_MULTIPLE_PERSONAS                ; On                                    ; --            ; PR          ; counter_persona2:counter_persona2_inst ;
+; BASE_REVISION                          ; PR                                    ; --            ; --          ; --                                     ;
+; BASE_REVISION_PROJECT_OUTPUT_DIRECTORY ; output_files                          ; --            ; --          ; --                                     ;
+; COMPILER_SIGNATURE_ID                  ; 0.163061045125476                     ; --            ; --          ; --                                     ;
+; EDA_OUTPUT_DATA_FORMAT                 ; Vhdl                                  ; --            ; --          ; eda_simulation                         ;
+; EDA_SIMULATION_TOOL                    ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --                                     ;
+; INPUT_PERSONA                          ; persona/PR.root_partition.persona     ; --            ; PR          ; Top                                    ;
+; MAX_CORE_JUNCTION_TEMP                 ; 85                                    ; --            ; --          ; --                                     ;
+; MIN_CORE_JUNCTION_TEMP                 ; 0                                     ; --            ; --          ; --                                     ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS         ; Half Signal Swing                     ; --            ; --          ; --                                     ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS         ; Half Signal Swing                     ; --            ; --          ; --                                     ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS        ; Half Vccio                            ; --            ; --          ; --                                     ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS        ; Half Vccio                            ; --            ; --          ; --                                     ;
+; PARTITION_COLOR                        ; 39423                                 ; --            ; PR          ; counter:counter_inst                   ;
+; PARTITION_COLOR                        ; 52377                                 ; --            ; PR          ; counter_persona2:counter_persona2_inst ;
+; PARTITION_COLOR                        ; 16764057                              ; --            ; PR          ; Top                                    ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; PLACEMENT_AND_ROUTING                 ; --            ; PR          ; counter:counter_inst                   ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; PLACEMENT_AND_ROUTING                 ; --            ; PR          ; counter_persona2:counter_persona2_inst ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; PLACEMENT_AND_ROUTING                 ; --            ; PR          ; Top                                    ;
+; PARTITION_NETLIST_TYPE                 ; SOURCE                                ; --            ; PR          ; counter:counter_inst                   ;
+; PARTITION_NETLIST_TYPE                 ; SOURCE                                ; --            ; PR          ; counter_persona2:counter_persona2_inst ;
+; PARTITION_NETLIST_TYPE                 ; SOURCE                                ; --            ; PR          ; Top                                    ;
+; POWER_BOARD_THERMAL_MODEL              ; None (CONSERVATIVE)                   ; --            ; --          ; --                                     ;
+; POWER_PRESET_COOLING_SOLUTION          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --                                     ;
+; PROJECT_OUTPUT_DIRECTORY               ; output_files                          ; --            ; --          ; --                                     ;
+; REVISION_TYPE                          ; Reconfigurable                        ; Base          ; --          ; --                                     ;
+; TOP_LEVEL_ENTITY                       ; PR                                    ; PWM_rev       ; --          ; --                                     ;
++----------------------------------------+---------------------------------------+---------------+-------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:07     ; 1.2                     ; 1245 MB             ; 00:00:18                           ;
+; Partition Merge           ; 00:00:01     ; 1.0                     ; 1568 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:27     ; 1.0                     ; 2677 MB             ; 00:00:55                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 1294 MB             ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.2                     ; 1543 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1368 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.2                     ; 1251 MB             ; 00:00:19                           ;
+; Partition Merge           ; 00:00:02     ; 1.0                     ; 1569 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:26     ; 1.0                     ; 2717 MB             ; 00:00:52                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 1296 MB             ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.3                     ; 1545 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1367 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:37     ; --                      ; --                  ; 00:02:50                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Partition Merge           ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Fitter                    ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Assembler                 ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; TimeQuest Timing Analyzer ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; EDA Netlist Writer        ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Analysis & Synthesis      ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Partition Merge           ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Fitter                    ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; Assembler                 ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; TimeQuest Timing Analyzer ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
+; EDA Netlist Writer        ; jarvis2          ; Ubuntu 20.04.3 ; 20         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off PR -c PWM_rev
+quartus_cdb --read_settings_files=off --write_settings_files=off PR -c PWM_rev --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+quartus_asm --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+quartus_sta PR -c PWM_rev
+quartus_eda --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+quartus_map --read_settings_files=on --write_settings_files=off PR -c PWM_rev
+quartus_cdb --read_settings_files=off --write_settings_files=off PR -c PWM_rev --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+quartus_asm --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+quartus_sta PR -c PWM_rev
+quartus_eda --read_settings_files=off --write_settings_files=off PR -c PWM_rev
+
+
+

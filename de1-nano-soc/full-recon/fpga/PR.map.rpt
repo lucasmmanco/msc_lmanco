@@ -1,0 +1,459 @@
+Analysis & Synthesis report for PR
+Thu Sep  2 16:18:23 2021
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Partition Status Summary
+  7. Partition for Top-Level Resource Utilization by Entity
+  8. Partition Dependent Files
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Partition "counter:counter_inst" Resource Utilization by Entity
+ 11. Partition Dependent Files
+ 12. Post-Synthesis Netlist Statistics for Partition counter:counter_inst
+ 13. Partition "counter_persona2:counter_persona2_inst" Resource Utilization by Entity
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Partition Dependent Files
+ 16. Post-Synthesis Netlist Statistics for Partition counter_persona2:counter_persona2_inst
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Sep  2 16:18:23 2021           ;
+; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Revision Name               ; PR                                              ;
+; Top-level Entity Name       ; PR                                              ;
+; Family                      ; Cyclone V                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; PR                 ; PR                 ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.70        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  23.3%      ;
+;     Processor 3            ;  23.2%      ;
+;     Processor 4            ;  23.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; counter_pwm.v                    ; yes             ; User Verilog HDL File                    ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v         ;         ;
+; counter_persona2_v1.v            ; yes             ; User Verilog HDL File                    ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_persona2_v1.v ;         ;
+; freezer.v                        ; yes             ; User Verilog HDL File                    ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer.v             ;         ;
+; prblock.v                        ; yes             ; User Verilog HDL File                    ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/prblock.v             ;         ;
+; freezer_partition2.v             ; yes             ; User Verilog HDL File                    ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer_partition2.v  ;         ;
+; PR.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/PR.bdf                ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Status Summary                                                          ;
++----------------------------------------+-------------+----------------------------+
+; Partition Name                         ; Synthesized ; Reason                     ;
++----------------------------------------+-------------+----------------------------+
+; Top                                    ; yes         ; netlist type = Source File ;
+; counter:counter_inst                   ; yes         ; netlist type = Source File ;
+; counter_persona2:counter_persona2_inst ; yes         ; netlist type = Source File ;
++----------------------------------------+-------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition for Top-Level Resource Utilization by Entity                                                                                                                                     ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name        ; Library Name ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+--------------------+--------------+
+; |PR                           ; 0 (0)             ; 2 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PR                          ; PR                 ; work         ;
+;    |freezer:inst3|            ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer:inst3            ; freezer            ; work         ;
+;    |freezer_partition2:inst4| ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer_partition2:inst4 ; freezer_partition2 ; work         ;
+;    |prblock:inst|             ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PR|prblock:inst             ; prblock            ; work         ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------+
+; Partition Dependent Files                                                             ;
++----------------------+-------------------+---------+----------------------------------+
+; File                 ; Location          ; Library ; Checksum                         ;
++----------------------+-------------------+---------+----------------------------------+
+; PR.bdf               ; Project Directory ; work    ; 96edb8f94a172f93e13ecefa4494290a ;
+; freezer.v            ; Project Directory ; work    ; b92b20a4a26d7e45f291b1954b169cde ;
+; freezer_partition2.v ; Project Directory ; work    ; 670ba0376372b67ad9f8ce0dcca81a3f ;
+; prblock.v            ; Project Directory ; work    ; dabb8648e9c70ecbbbb5e74da13a842b ;
++----------------------+-------------------+---------+----------------------------------+
+
+
++-------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition   ;
++-----------------------------------------------+-------+
+; Type                                          ; Count ;
++-----------------------------------------------+-------+
+; arriav_ff                                     ; 2     ;
+;     CLR                                       ; 2     ;
+; arriav_prblock                                ; 1     ;
+; blackbox                                      ; 2     ;
+;         ounter:counter_inst                   ; 1     ;
+;         ounter_persona2:counter_persona2_inst ; 1     ;
+; boundary_port                                 ; 25    ;
+;                                               ;       ;
+; Max LUT depth                                 ; 0.00  ;
+; Average LUT depth                             ; 0.00  ;
++-----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "counter:counter_inst" Resource Utilization by Entity                                                                                                                              ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name ; Library Name ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------+-------------+--------------+
+; |PR                          ; 42 (0)            ; 36 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR                                    ; PR          ; work         ;
+;    |freezer:inst3|           ; 42 (0)            ; 36 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer:inst3                      ; freezer     ; work         ;
+;       |counter:counter_inst| ; 42 (42)           ; 36 (36)      ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer:inst3|counter:counter_inst ; counter     ; work         ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Partition Dependent Files                                                      ;
++---------------+-------------------+---------+----------------------------------+
+; File          ; Location          ; Library ; Checksum                         ;
++---------------+-------------------+---------+----------------------------------+
+; counter_pwm.v ; Project Directory ; work    ; adb544ff7bb111a9edd8097a4b567100 ;
++---------------+-------------------+---------+----------------------------------+
+
+
++----------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition counter:counter_inst ;
++-----------------------+----------------------------------------------+
+; Type                  ; Count                                        ;
++-----------------------+----------------------------------------------+
+; arriav_ff             ; 36                                           ;
+;     CLR               ; 7                                            ;
+;     CLR SCLR          ; 22                                           ;
+;     ENA               ; 1                                            ;
+;     ENA CLR           ; 6                                            ;
+; arriav_lcell_comb     ; 42                                           ;
+;     arith             ; 28                                           ;
+;         1 data inputs ; 23                                           ;
+;         2 data inputs ; 5                                            ;
+;     normal            ; 14                                           ;
+;         1 data inputs ; 2                                            ;
+;         2 data inputs ; 1                                            ;
+;         3 data inputs ; 1                                            ;
+;         4 data inputs ; 5                                            ;
+;         5 data inputs ; 3                                            ;
+;         6 data inputs ; 2                                            ;
+; boundary_port         ; 3                                            ;
+;                       ;                                              ;
+; Max LUT depth         ; 3.10                                         ;
+; Average LUT depth     ; 2.04                                         ;
++-----------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "counter_persona2:counter_persona2_inst" Resource Utilization by Entity                                                                                                                                                                  ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name        ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
+; |PR                                            ; 34 (0)            ; 27 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR                                                                 ; PR                 ; work         ;
+;    |freezer_partition2:inst4|                  ; 34 (0)            ; 27 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer_partition2:inst4                                        ; freezer_partition2 ; work         ;
+;       |counter_persona2:counter_persona2_inst| ; 34 (34)           ; 27 (27)      ; 0                 ; 0          ; 0    ; 0            ; |PR|freezer_partition2:inst4|counter_persona2:counter_persona2_inst ; counter_persona2   ; work         ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |PR|freezer_partition2:inst4|counter_persona2:counter_persona2_inst|count[12] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Partition Dependent Files                                                              ;
++-----------------------+-------------------+---------+----------------------------------+
+; File                  ; Location          ; Library ; Checksum                         ;
++-----------------------+-------------------+---------+----------------------------------+
+; counter_persona2_v1.v ; Project Directory ; work    ; 3b687272e8e5da3339422bf227997102 ;
++-----------------------+-------------------+---------+----------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition counter_persona2:counter_persona2_inst ;
++-----------------------+----------------------------------------------------------------+
+; Type                  ; Count                                                          ;
++-----------------------+----------------------------------------------------------------+
+; arriav_ff             ; 27                                                             ;
+;     SCLR              ; 26                                                             ;
+;     plain             ; 1                                                              ;
+; arriav_lcell_comb     ; 34                                                             ;
+;     arith             ; 26                                                             ;
+;         1 data inputs ; 26                                                             ;
+;     normal            ; 8                                                              ;
+;         2 data inputs ; 1                                                              ;
+;         4 data inputs ; 2                                                              ;
+;         6 data inputs ; 5                                                              ;
+; boundary_port         ; 3                                                              ;
+;                       ;                                                                ;
+; Max LUT depth         ; 3.50                                                           ;
+; Average LUT depth     ; 2.84                                                           ;
++-----------------------+----------------------------------------------------------------+
+
+
++-------------------------------------------------------+
+; Elapsed Time Per Partition                            ;
++----------------------------------------+--------------+
+; Partition Name                         ; Elapsed Time ;
++----------------------------------------+--------------+
+; counter_persona2:counter_persona2_inst ; 00:00:01     ;
+; counter:counter_inst                   ; 00:00:01     ;
+; Top                                    ; 00:00:01     ;
++----------------------------------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Sep  2 16:18:15 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PR -c PR
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file counter_pwm.v
+    Info (12023): Found entity 1: counter File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file counter_persona2_v1.v
+    Info (12023): Found entity 1: counter_persona2 File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_persona2_v1.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file freezer.v
+    Info (12023): Found entity 1: freezer File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file prblock.v
+    Info (12023): Found entity 1: prblock File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/prblock.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file freezer_partition2.v
+    Info (12023): Found entity 1: freezer_partition2 File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer_partition2.v Line: 3
+Warning (12125): Using design file PR.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PR
+Info (12127): Elaborating entity "PR" for the top level hierarchy
+Info (12128): Elaborating entity "freezer" for hierarchy "freezer:inst3"
+Info (12128): Elaborating entity "counter" for hierarchy "freezer:inst3|counter:counter_inst" File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer.v Line: 27
+Warning (10230): Verilog HDL assignment warning at counter_pwm.v(27): truncated value with size 32 to match size of target (22) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v Line: 27
+Warning (10230): Verilog HDL assignment warning at counter_pwm.v(35): truncated value with size 32 to match size of target (6) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v Line: 35
+Warning (10230): Verilog HDL assignment warning at counter_pwm.v(37): truncated value with size 32 to match size of target (6) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v Line: 37
+Warning (10230): Verilog HDL assignment warning at counter_pwm.v(48): truncated value with size 32 to match size of target (6) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_pwm.v Line: 48
+Info (12128): Elaborating entity "prblock" for hierarchy "prblock:inst"
+Info (12128): Elaborating entity "freezer_partition2" for hierarchy "freezer_partition2:inst4"
+Info (12128): Elaborating entity "counter_persona2" for hierarchy "freezer_partition2:inst4|counter_persona2:counter_persona2_inst" File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer_partition2.v Line: 27
+Warning (10230): Verilog HDL assignment warning at counter_persona2_v1.v(18): truncated value with size 32 to match size of target (1) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_persona2_v1.v Line: 18
+Warning (10230): Verilog HDL assignment warning at counter_persona2_v1.v(21): truncated value with size 32 to match size of target (26) File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/counter_persona2_v1.v Line: 21
+Info (12206): 3 design partitions require synthesis
+    Info (12210): Partition "Top" requires synthesis because its netlist type is Source File
+    Info (12210): Partition "counter:counter_inst" requires synthesis because its netlist type is Source File
+    Info (12210): Partition "counter_persona2:counter_persona2_inst" requires synthesis because its netlist type is Source File
+Info (12209): No design partitions will skip synthesis in the current incremental compilation
+Info (281037): Using 10 processors to synthesize 3 partitions in parallel
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Sep  2 16:18:22 2021
+Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top PR -c PR
+Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 2 logic cells
+    Info (21071): Implemented 2 partitions
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1237 megabytes
+    Info: Processing ended: Thu Sep  2 16:18:23 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Sep  2 16:18:22 2021
+Info: Command: quartus_map --parallel=1 --helper=1 --helper_type=user_partition --partition=counter:counter_inst PR -c PR
+Info (281019): Starting Logic Optimization and Technology Mapping for Partition counter:counter_inst File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer.v Line: 27
+Info (286031): Timing-Driven Synthesis is running on partition "counter:counter_inst"
+Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 42 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1233 megabytes
+    Info: Processing ended: Thu Sep  2 16:18:23 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Sep  2 16:18:22 2021
+Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=counter_persona2:counter_persona2_inst PR -c PR
+Info (281019): Starting Logic Optimization and Technology Mapping for Partition counter_persona2:counter_persona2_inst File: /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/freezer_partition2.v Line: 27
+Info (286031): Timing-Driven Synthesis is running on partition "counter_persona2:counter_persona2_inst"
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 34 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1233 megabytes
+    Info: Processing ended: Thu Sep  2 16:18:23 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+Info (281038): Finished parallel synthesis of all partitions
+Info (144001): Generated suppressed messages file /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/output_files/PR.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 1250 megabytes
+    Info: Processing ended: Thu Sep  2 16:18:23 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /media/dloubach/data/sw-test-projects/cvsoc_board/cyclone-v-soc-partial-reconfig-hw/output_files/PR.map.smsg.
+
+

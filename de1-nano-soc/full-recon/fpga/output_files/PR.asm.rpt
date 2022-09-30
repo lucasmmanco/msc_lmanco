@@ -1,0 +1,139 @@
+Assembler report for PR
+Thu Sep  2 16:19:01 2021
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: PR.sof
+  6. Assembler Device Options: PR.static.msf
+  7. Assembler Device Options: PR.x1y1.msf
+  8. Assembler Device Options: PR.x6y1.msf
+  9. Assembler Device Options: PR.rbf
+ 10. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Thu Sep  2 16:19:01 2021 ;
+; Revision Name         ; PR                                    ;
+; Top-level Entity Name ; PR                                    ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSXFC6D6F31C6                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; PR.sof                    ;
+; PR.static.msf             ;
+; PR.x1y1.msf               ;
+; PR.x6y1.msf               ;
+; PR.rbf                    ;
++---------------------------+
+
+
++----------------------------------+
+; Assembler Device Options: PR.sof ;
++----------------+-----------------+
+; Option         ; Setting         ;
++----------------+-----------------+
+; Device         ; 5CSXFC6D6F31C6  ;
+; JTAG usercode  ; 0x00B083CE      ;
+; Checksum       ; 0x00B083CE      ;
++----------------+-----------------+
+
+
++-----------------------------------------+
+; Assembler Device Options: PR.static.msf ;
++---------+-------------------------------+
+; Option  ; Setting                       ;
++---------+-------------------------------+
+; Device  ; 5CSXFC6D6F31C6                ;
++---------+-------------------------------+
+
+
++---------------------------------------+
+; Assembler Device Options: PR.x1y1.msf ;
++------------------+--------------------+
+; Option           ; Setting            ;
++------------------+--------------------+
+; Device           ; 5CSXFC6D6F31C6     ;
+; PR bitstream ID  ; 1008024684         ;
++------------------+--------------------+
+
+
++---------------------------------------+
+; Assembler Device Options: PR.x6y1.msf ;
++------------------+--------------------+
+; Option           ; Setting            ;
++------------------+--------------------+
+; Device           ; 5CSXFC6D6F31C6     ;
+; PR bitstream ID  ; 1008024684         ;
++------------------+--------------------+
+
+
++----------------------------------+
+; Assembler Device Options: PR.rbf ;
++---------------------+------------+
+; Option              ; Setting    ;
++---------------------+------------+
+; Raw Binary File     ;            ;
+;  Compression Ratio  ; 3          ;
++---------------------+------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Thu Sep  2 16:18:54 2021
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PR -c PR
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1313 megabytes
+    Info: Processing ended: Thu Sep  2 16:19:01 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
+
+
